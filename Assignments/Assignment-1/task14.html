@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Sidebar vs. Fixed Element</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+            min-height: 200vh; 
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .sidebar {
+            width: 200px; 
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-right: 1px solid #ccc;      
+            position: sticky; 
+            top: 20px; 
+            align-self: flex-start; 
+            height: fit-content;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            border-bottom: 2px solid #bdc3c7;
+            padding-bottom: 10px;
+        }
+
+        .main-content {
+            flex-grow: 1; 
+            padding: 20px 30px;
+            background-color: white;
+            border-radius: 8px;
+            margin-left: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .fixed-box {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 150px;
+            padding: 10px;
+            background-color: #e74c3c; 
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+        
+        p { margin-bottom: 1.5em; }
+        .long-text { font-size: 0.9em; color: #555; }
+    </style>
+</head>
+<body>
+
+    <div class="fixed-box">
+        Fixed Box<br>
+        
+    </div>
+
+    <div class="container">
+        
+        <aside class="sidebar">
+            <h2>Sticky Navigation</h2>
+            <p>
+                This bar uses position: sticky.
+                <br><br>
+                It scrolls normally until it hits the `top: 20px` boundary of the viewport, then it *sticks* until its parent container ends.
+            </p>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h1>Main Content Area</h1>
+            <p>Scroll down to see the difference between the **Sticky Sidebar** on the left and the **Fixed Box** on the bottom right.</p>
+            
+            <h2>Demonstration of Positioning</h2>
+            
+            <p>The main content area scrolls normally, allowing the user to view all the content without the side navigation obstructing the main flow.</p>
+
+            <h3>How Sticky Positioning Works:</h3>
+            <p class="long-text">
+                The `sticky` element (`.sidebar`) behaves like `position: relative` within its parent (`.container`) until the scroll position meets a defined threshold (`top: 20px` in the CSS). At that point, it switches behavior to mimic `position: fixed`, sticking to the viewport. Crucially, it only sticks within its direct parent element's boundaries.
+            </p>
+            <p class="long-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            
+            <h3>Contrast with Fixed Positioning:</h3>
+            <p class="long-text">
+                The **Fixed Box** in the corner uses **`position: fixed`**. This element is removed completely from the normal document flow and is positioned *only* relative to the viewport. It never scrolls with the content, and it doesn't care about its parent container. It stays locked in place at `right: 20px` and `bottom: 20px` indefinitely.
+            </p>
+            
+            <p class="long-text">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et ipsum. Fusce sed velit quis risus varius lacinia. Praesent eget nisl sed nisl laoreet pretium. Sed non odio sed ante volutpat scelerisque. Vivamus quis magna quis dui ultrices iaculis. Fusce convallis metus id felis luctus adipiscing. Fusce consectetur lacus eu purus.
+            </p>
+            
+            <p class="long-text">
+                Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+            
+            <p class="long-text">
+                Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula non magna egestas rhoncus. Curabitur a dolor non tellus facilisis iaculis. Fusce convallis metus id felis luctus adipiscing. Fusce consectetur lacus eu purus.
+            </p>
+            
+            <p>-- End of Content --</p>
+        </main>
+    </div>
+
+</body>
+</html>

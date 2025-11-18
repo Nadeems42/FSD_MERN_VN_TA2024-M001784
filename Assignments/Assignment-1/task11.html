@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style demo.css">
+    <style>
+        .internal-section {
+            border: 2px dashed #ff5733;
+            background-color: #ffe4e1;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .internal-section h2 {
+            color: #ff5733;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <Header>
+            <h1>Styling Demo</h1>
+            <p>header is styled using external css</p>
+        </Header>
+    </div>
+    <div class="internal-section">
+        <h2>internal css section</h2>
+        <p>this entire bordered box uses css directly within the tags in the head of the document</p>
+
+    </div>
+
+    <div>
+        <p style="background-color: #1abc9c; padding: 10px; border-radius: 5px; text-align: center;">this Paragraph
+            styled using "Inline CSS" method
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CSS demo page styled externally</p>
+    </footer>
+</body>
+
+</html>

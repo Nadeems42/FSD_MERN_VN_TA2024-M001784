@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        body {
+            background: linear-gradient(180deg, var(--light), #ffffff);
+            color: var(--dark);
+            line-height: 1.45;
+            padding: 20px
+        }
+
+        .form-card {
+            padding: 16px;
+            border-radius: 8px;
+            background: linear-gradient(180deg, #fff, #fbfdff);
+            border: 1px dashed rgba(30, 136, 229, 0.12)
+        }
+
+        .form-row {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 10px
+        }
+
+        .form-row label {
+            min-width: 140px;
+            align-self: center
+        }
+
+
+        .footer-columns {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap
+        }
+
+        .col {
+            flex: 1;
+            min-width: 180px
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">Nadeem S.</div>
+        <nav class="nav"><a href="index.html">Home</a><a href="projects.html">Projects</a><a
+                href="contact.html">Contact</a></nav>
+    </header>
+    <main class="container">
+        <h2>Contact Me</h2>
+        <form>
+            <div class="form-row"><label for="fullname">Full Name</label><input id="fullname" required
+                    placeholder="Full name"></div>
+            <div class="form-row"><label for="emailc">Email</label><input id="emailc" type="email" required
+                    placeholder="you@example.com"></div>
+            <div class="form-row"><label for="phone">Phone</label><input id="phone" type="tel" placeholder="+91"></div>
+            <div class="form-row"><label for="subject">Subject</label><input id="subject" required></div>
+            <div class="form-row"><label for="message">Message</label><textarea id="message" required rows="6"
+                    placeholder="Your message"></textarea></div>
+            <div><button class="btn" type="submit">Send</button></div>
+        </form>
+
+        <h3 style="margin-top:12px">Contact Info</h3>
+        <address>Email: <a href="mailto:nadeem@example.com">nadeem@example.com</a><br>Phone: +91 7092680975<br>Location:
+            Chennai 600032</address>
+
+        <h3 style="margin-top:12px">Social</h3>
+        <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+        </ul>
+
+    </main>
+    <footer style="text-align:center;margin-top:12px">© 2025 Nadeem</footer>
+</body>
+
+</html>

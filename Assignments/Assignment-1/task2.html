@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .products-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .products-table th,
+        .products-table td {
+            border: 1px solid #e5e7eb;
+            padding: 10px;
+            text-align: left
+        }
+
+        .products-table th {
+            background: #f3f4f6
+        }
+    </style>
+</head>
+
+<body>
+    <section id="q2" class="section">
+        <h2>Products Table</h2>
+        <table class="products-table" aria-describedby="products-desc">
+            <caption id="products-desc">List of 5 products</caption>
+            <thead style="background-color: cadetblue;">
+                <tr>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Price (₹)</th>
+                    <th>Stock Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Precision Drill</td>
+                    <td>Machinery</td>
+                    <td>₹12,500</td>
+                    <td>In Stock</td>
+                    <td><button>Buy</button></td>
+                </tr>
+                <tr>
+                    <td>CNC Mill</td>
+                    <td>Machinery</td>
+                    <td>₹75,000</td>
+                    <td>Out of Stock</td>
+                    <td><button disabled>Buy</button></td>
+                </tr>
+                <tr>
+                    <td>Grinding Wheel</td>
+                    <td>Accessories</td>
+                    <td>₹850</td>
+                    <td>In Stock</td>
+                    <td><button>Buy</button></td>
+                </tr>
+                <tr>
+                    <td>Cutting Fluid</td>
+                    <td>Consumables</td>
+                    <td>₹450</td>
+                    <td>Low Stock</td>
+                    <td><button>Buy</button></td>
+                </tr>
+                <tr>
+                    <td>Lathe Chuck</td>
+                    <td>Machinery</td>
+                    <td>₹4,200</td>
+                    <td>In Stock</td>
+                    <td><button>Buy</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+
+</html>

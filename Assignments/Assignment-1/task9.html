@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxes {
+            display: flex;
+            gap: 12px
+        }
+
+        .box {
+            background: #fff;
+            padding: 12px;
+            border: 2px solid #e5e7eb;
+            width: 200px
+        }
+
+        .box.one {
+            margin: 20px;
+            padding: 30px;
+            border: 4px dotted #c7d2fe
+        }
+
+        .box.two {
+            margin: 6px;
+            padding: 8px;
+            border: 6px solid #fde68a
+        }
+
+        .box.three {
+            margin: 0;
+            padding: 16px;
+            border: 2px dashed #cbd5e1
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>CSS Box Model Demo</h2>
+        <div class="boxes">
+            <div class="box one">Box One<br>margin:20px; padding:30px; border:4px dotted</div>
+            <div class="box two">Box Two<br>margin:6px; padding:8px; border:6px solid</div>
+            <div class="box three">Box Three<br>margin:0; padding:16px; border:2px dashed</div>
+        </div>
+    </div>
+</body>
+
+</html>

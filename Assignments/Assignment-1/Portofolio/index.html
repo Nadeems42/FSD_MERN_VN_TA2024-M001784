@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nathimulla S — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html">Nathimulla <span class="surname">S</span></a>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hello — I'm <span class="accent">Nathimulla S</span></h1>
+          <p class="tagline">Results-driven Software Engineer • AI & Backend Developer</p>
+          <p class="intro">I build scalable backends and AI-powered applications. I love solving problems with clean code and secure architectures.</p>
+          <a class="btn primary" href="projects.html">See My Projects</a>
+        </div>
+        <div class="hero-photo">
+          <!-- Placeholder image; replace with your photo inside assets/images/ -->
+          <img src="assets/images/photo-placeholder.jpg" alt="Nathimulla S photo">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about container" id="about">
+      <h2>About Me</h2>
+      <p>I am a recent B.E. graduate in Computer Science (Anna University) from Chennai, with experience in backend and full-stack development, and projects in AI and real-time systems. I hold certifications in Google Cybersecurity and Generative AI and enjoy building practical, production-ready solutions.</p>
+
+      <div class="about-grid">
+        <article class="card">
+          <h3>Education</h3>
+          <table class="edu-table">
+            <thead>
+              <tr><th>Degree</th><th>Institution</th><th>Year</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>B.E. Computer Science</td><td>Thirumalai Engineering College, Anna University</td><td>2021–2025</td></tr>
+              <tr><td>Diploma — Mechanical</td><td>Vignesh Polytechnic College</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="card skills">
+          <h3>Skills</h3>
+          <ul class="skill-list">
+            <li>Java • Python • JavaScript</li>
+            <li>Node.js • Flask • REST APIs</li>
+            <li>YOLOv8 • OCR • Computer Vision</li>
+            <li>PostgreSQL • MongoDB • DynamoDB</li>
+            <li>Docker • AWS • Git</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / CTA -->
+    <section class="experience container">
+      <h2>Experience & Projects</h2>
+      <p>Worked on projects including a Real-Time License Card Verification System (YOLOv8 + OCR + Flask), a Movie Ticket Booking backend, and a responsive Gift Shop website.</p>
+      <a class="btn outline" href="contact.html">Contact Me</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>&copy; 2025 Nathimulla S — Chennai, India</p>
+        <p>Email: <a href="mailto:nathimnads786@gmail.com">nathimnads786@gmail.com</a> • Phone: <a href="tel:+917092680975">+91 7092680975</a></p>
+      </div>
+      <div class="social">
+        <a href="https://linkedin.com/in/nathimulla-s-7235ba230" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Nadeems42" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', ()=>{
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

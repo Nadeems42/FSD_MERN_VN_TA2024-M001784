@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Nathimulla S</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html">Nathimulla S</a></div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="projects-intro">
+      <h1>Projects</h1>
+      <p>A selection of projects I built during my studies and freelance work. Click any card for more details.</p>
+    </section>
+
+    <section class="projects-grid" aria-label="Project gallery">
+      <!-- Grid with at least 6 project cards -->
+      <article class="project-card">
+        <img src="assets/images/project1.webp" alt="Project 1 image">
+        <h3>Real-Time License Card Verification</h3>
+        <p>YOLOv8-based detection with OCR and Flask backend for verification and logging.</p>
+        <ul class="tech-tags"><li>YOLOv8</li><li>Flask</li><li>OCR</li></ul>
+        <div class="card-links">
+          <a href="#">Demo</a>
+          <a href="#">Code</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="assets/images/project1.jpg" alt="Project 2 image">
+        <h3>Gift Shop Website</h3>
+        <p>Responsive e-commerce site with Node.js backend and MongoDB. WhatsApp order integration.</p>
+        <ul class="tech-tags"><li>React</li><li>Node.js</li><li>MongoDB</li></ul>
+        <div class="card-links"><a href="#">Live</a><a href="#">Code</a></div>
+      </article>
+
+      <article class="project-card">
+        <img src="assets/images/project3.jpg" alt="Project 3 image">
+        <h3>Movie Ticket Booking API</h3>
+        <p>Scalable backend for seat booking with retry logic for payments and role-based access control.</p>
+        <ul class="tech-tags"><li>Node.js</li><li>Express</li><li>MongoDB</li></ul>
+        <div class="card-links"><a href="#">Docs</a><a href="#">Code</a></div>
+      </article>
+
+      <article class="project-card">
+        <img src="assets/images/project4.jpg" alt="Project 4 image">
+        <h3>Data Analytics Pipeline</h3>
+        <p>ETL pipeline and dashboards using Python and PostgreSQL to derive business metrics.</p>
+        <ul class="tech-tags"><li>Python</li><li>PostgreSQL</li></ul>
+        <div class="card-links"><a href="#">Report</a><a href="#">Code</a></div>
+      </article>
+
+      <article class="project-card">
+        <img src="assets/images/project5.jpg" alt="Project 5 image">
+        <h3>AI Resume Screener (Prototype)</h3>
+        <p>Prototype for automatically ranking resumes using keyword matching and scoring heuristics.</p>
+        <ul class="tech-tags"><li>Python</li><li>NLU</li></ul>
+        <div class="card-links"><a href="#">Demo</a><a href="#">Code</a></div>
+      </article>
+
+      <article class="project-card">
+        <img src="assets/images/project6.jpg" alt="Project 6 image">
+        <h3>Portfolio Website</h3>
+        <p>This portfolio: a responsive, accessible site built with semantic HTML and modern CSS (Flexbox, Grid).</p>
+        <ul class="tech-tags"><li>HTML</li><li>CSS</li></ul>
+        <div class="card-links"><a href="#">View</a><a href="#">Code</a></div>
+      </article>
+    </section>
+
+    <!-- Projects table -->
+    <section class="projects-table container">
+      <h2>Project List</h2>
+      <table class="projects-list">
+        <thead>
+          <tr><th>Project Name</th><th>Category</th><th>Technologies</th><th>Completion Date</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Real-Time License Card Verification</td><td>AI / Computer Vision</td><td>YOLOv8, Flask, OCR</td><td>May 2025</td></tr>
+          <tr><td>Gift Shop Website</td><td>Web App</td><td>React, Node.js, MongoDB</td><td>Jan 2025</td></tr>
+          <tr><td>Movie Ticket Booking API</td><td>Backend</td><td>Node.js, Express, MongoDB</td><td>Dec 2024</td></tr>
+          <tr><td>Data Analytics Pipeline</td><td>Data</td><td>Python, PostgreSQL</td><td>Feb 2025</td></tr>
+          <tr><td>AI Resume Screener</td><td>AI Prototype</td><td>Python, NLU</td><td>Mar 2025</td></tr>
+          <tr><td>Portfolio Website</td><td>Frontend</td><td>HTML, CSS</td><td>Nov 2025</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Nathimulla S</p>
+      <div class="social"><a href="https://github.com/Nadeems42" target="_blank">GitHub</a> <a href="https://linkedin.com/in/nathimulla-s-7235ba230" target="_blank">LinkedIn</a></div>
+    </div>
+  </footer>
+
+  <script>
+    // reuse mobile nav toggle
+    document.querySelectorAll('.nav-toggle').forEach(btn=>btn.addEventListener('click', ()=>{
+      document.querySelector('.main-nav').classList.toggle('open');
+    }));
+  </script>
+</body>
+</html>
